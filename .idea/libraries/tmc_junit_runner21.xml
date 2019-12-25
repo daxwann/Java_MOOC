@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tmc-junit-runner21">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/week1-011.BiggerNumber/lib/testrunner/tmc-junit-runner.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

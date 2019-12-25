@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tmc-junit-runner23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/week1-018.GradesAndPoints/lib/testrunner/tmc-junit-runner.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

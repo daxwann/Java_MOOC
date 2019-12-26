@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="week1-019.AgeCheck" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="AgeCheck" />
+    <module name="week1-019.AgeCheck" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

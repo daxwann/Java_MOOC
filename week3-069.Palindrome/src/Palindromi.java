@@ -4,7 +4,18 @@ public class Palindromi {
 
     public static boolean palindrome(String text) {
         // write code here
-        return false;
+        if (text.length() < 2) {
+            return true;
+        }
+
+        int index = 0;
+        while (index <= text.length() / 2) {
+            if (text.charAt(index) != text.charAt(text.length() - 1 - index)) {
+                return false;
+            }
+            index++;
+        }
+        return true;
     }
 
     public static void main(String[] args) {

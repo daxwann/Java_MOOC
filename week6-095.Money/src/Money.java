@@ -23,6 +23,42 @@ public class Money {
         return cents;
     }
 
+    public Money plus(Money added) {
+        int totalCents = this.cents + added.cents();
+        int totalEuros = this.euros + added.euros();
+
+        return new Money(totalEuros, totalCents);
+    }
+
+    public boolean less(Money compared) {
+        if (this.euros < compared.euros()) {
+            return true;
+        } else if (this.euros == compared.euros() && this.cents < compared.cents()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public Money minus(Money decremented) {
+        int totalCents = this.cents - decremented.cents();
+        int totalEuros = this.euros - decremented.euros();
+
+        if (totalCents < 0) {
+            totalEuros += (totalCents / 100 - 1);
+            totalCents = totalCents % 100;
+        }
+
+        if (totalEuros < 0 || (totalEuros == 0 && totalCents < 0)) {
+            totalCents = 0;
+            totalEuros = 0;
+        } else if (totalCents < 0){
+            totalCents = 100 + totalCents;
+        }
+
+        return new Money(totalEuros, totalCents);
+    }
+
     @Override
     public String toString() {
         String zero = "";

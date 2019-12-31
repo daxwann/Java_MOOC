@@ -35,9 +35,9 @@ public class MyDate {
         int diffMonth = this.month - comparedDate.month;
         int diffDay = this.day - comparedDate.day;
 
-        int exactDiffDay = diffYear * 360 + diffMonth * 30 + diffDay;
+        int exactDiffDay = diffYear * 365 + diffMonth * 30 + diffDay;
 
-        int exactDiffYear = exactDiffDay / 360;
+        int exactDiffYear = exactDiffDay / 365;
 
         if (exactDiffYear < 0) {
             exactDiffYear *= -1;

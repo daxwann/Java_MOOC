@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner lukija = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
         // implement your program here
         // do not put all to one method/class but rather design a proper structure to your program
         
